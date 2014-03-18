@@ -1,0 +1,11 @@
+#!/bin/sh
+
+DIR=/home/xupeng/dev/public_res/
+
+if [ -z $1 ] 
+then
+	PROG=csapp
+else
+	PROG=$1
+fi
+ln -s $DIR$PROG/Makefile ./
