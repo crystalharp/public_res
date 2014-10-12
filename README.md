@@ -25,3 +25,13 @@ csapp:
 	also, I compiled the csapp.c to csapp.o using "gcc -c csapp.c" in a 
 	32 bit platform. Then, the csapp.o could be used in the general Makefile
 
+auto_deploy:
+	
+	a server deploy script tool for test env.
+	you need to do on your server:
+	1.put build_env.sh and post-receive to the deploy folder
+	2.execute build_env.sh, it will create a bare repo
+	3.input your tomcat/resin server path to conf.rc
+	you need to do in your project:
+	1.create deploy/deploy-test.sh in your project to build your package
+	2.create deploy/get_package.sh in your project for server to get package path
